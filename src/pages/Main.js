@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from "recoil";
-import { darkMode } from "recoil/atoms";
+
+// import {
+//   RecoilRoot,
+//   atom,
+//   selector,
+//   useRecoilState,
+//   useRecoilValue,
+// } from "recoil";
+// import { darkMode } from "recoil/atoms";
 
 const Main = () => {
-  const [test, setTest] = useRecoilState(darkMode);
+  //   const [test, setTest] = useRecoilState(darkMode);
 
-  return <div>Main{test}</div>;
+  return <div>Main</div>;
 };
 
 export default Main;

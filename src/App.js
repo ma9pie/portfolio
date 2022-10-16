@@ -6,15 +6,13 @@ import "styles/App.scss";
 
 function App() {
   return (
-    <Wrapper>
+    <div>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
-    </Wrapper>
+    </div>
   );
 }
 
 export default App;
-
-const Wrapper = styled.div``;
