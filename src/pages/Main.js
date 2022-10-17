@@ -1,18 +1,37 @@
+import styled from "@emotion/styled";
 import React, { useEffect } from "react";
-
-// import {
-//   RecoilRoot,
-//   atom,
-//   selector,
-//   useRecoilState,
-//   useRecoilValue,
-// } from "recoil";
-// import { darkMode } from "recoil/atoms";
+import { Link } from "react-router-dom";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { themeState } from "recoil/atom";
 
 const Main = () => {
-  //   const [test, setTest] = useRecoilState(darkMode);
+  const [theme, setTheme] = useRecoilState(themeState);
 
-  return <div>Main</div>;
+  return (
+    <Wrapper>
+      <Gnb>
+        <LinkBox>
+          <Link to="/">Home</Link>
+        </LinkBox>
+        <LinkBox>
+          <Link to="/about">About</Link>
+        </LinkBox>
+        <LinkBox>
+          <Link to="/resume">Resume</Link>
+        </LinkBox>
+      </Gnb>
+      Main3
+    </Wrapper>
+  );
 };
 
 export default Main;
+
+const Wrapper = styled.div``;
+
+const Gnb = styled.nav`
+  display: flex;
+`;
+const LinkBox = styled.div`
+  margin-right: 8px;
+`;
