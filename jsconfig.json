@@ -1,6 +1,19 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
-  },
-  "include": ["src"]
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/common/*": ["common/*"],
+      "@/layouts/*": ["layouts/*"],
+      "@/redux/*": ["redux/*"],
+      "@/api/*": ["pages/api/*"],
+      "@/utils/*": ["utils/*"],
+      "@/pages/*": ["pages/*"],
+      "@/public/*": ["public/*"],
+      "@/styles/*": ["styles/*"],
+      "@/fonts/*": ["public/fonts/*"],
+      "@/svg/*": ["components/svg/*"],
+      "@/images/*": ["public/images/*"]
+    }
+  }
 }
