@@ -1,9 +1,3 @@
-/**
- * [Titl] 로딩
- * [Description] API호출 시 응답시간동안 빈페이지 대신
- * 로딩중을 표시하기 위한 컴포넌트
- * 작성
- */
 import styled from "@emotion/styled";
 import React from "react";
 

@@ -1,34 +1,10 @@
-/**
- * [Title] 토글
- * [Description] input태그의 checkbox 기능을 하는 토글 컴포넌트,
- * [Usage]
- * @props id : 토글의 아이디(토글마다 다르게 설정해야 함)
- * @props width : 토글의 너비
- * @props height : 토글의 높이
- * @props toggleOffBackground : off 상태의 토글 배경
- * @props toggleOnBackground : on 상태의 토글 배경
- * @props sliderMargin : 슬라이더와 토글 테두리 사이의 간격
- * @props sliderColor : 슬라이더(동그라미)의 색
- *
- * sliderMargin값이 0일때 토글의 높이 === 슬라이더의 지름
- *
- * [Ex]
- * height="40px", sliderMargin="2px"일 경우
- * 슬라이더의 지름은 "36px"
- */
 import styled from "@emotion/styled";
 import React from "react";
 
 const Toggle = (props) => {
   return (
     <Container>
-      <CheckBox
-        {...props}
-        id={props.id}
-        type="checkbox"
-        onChange={props.onChange}
-        defaultChecked={props.defaultChecked}
-      ></CheckBox>
+      <CheckBox type="checkbox" {...props}></CheckBox>
       <Slider {...props} htmlFor={props.id}></Slider>
     </Container>
   );
@@ -38,16 +14,14 @@ export default Toggle;
 
 Toggle.defaultProps = {
   id: "checkbox1", // 체크박스 id
-  width: "60px", // 토글 너비
-  height: "30px", // 토글 높이
+  width: "56px", // 토글 너비
+  height: "28px", // 토글 높이
   margin: "0px", // 토글 마진
   padding: "0px", // 토글 패딩
   toggleOffBackground: "var(--disableBtn)", // off 상태의 토글 배경
   toggleOnBackground: "var(--primaryColor)", // on 상태의 토글 배경
   sliderMargin: "2.5px", // 슬라이더와 토글 테두리 사이의 간격
   sliderColor: "#ffffff", // 슬라이더 색
-  defaultChecked: false,
-  onChange: () => {},
 };
 
 const Container = styled.div`

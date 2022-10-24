@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import "@/styles/fonts.scss";
+import "@/styles/globals.scss";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout || ((page) => page);
+
+  return getLayout(<Component {...pageProps} />);
 }
 
-export default MyApp
+export default App;
