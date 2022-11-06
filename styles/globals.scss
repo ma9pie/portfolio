@@ -19,42 +19,73 @@ a {
   box-sizing: border-box;
 }
 
-/* 라이트모드(기본) */
+/* 다크 모드(기본) */
 :root {
-  // 메인
-  --primaryColor: #fcd034;
+  --vh: 100%;
 
-  // 배경
-  --bg: #ffffff;
+  // font size
+  --xs: 0.75rem;
+  --sm: 0.875rem;
+  --base: 1rem;
+  --lg: 1.125rem;
+  --xl: 1.25rem;
+  --2xl: 1.5rem;
+  --3xl: 1.875rem;
+  --4xl: 2.25rem;
+  --5xl: 3rem;
+  --6xl: 4rem;
 
-  // 텍스트
-  --mainText: #21252f;
-  --subText: #868d9a;
+  // color
+  --gray100: #f7fafc;
+  --gray200: #edf2f7;
+  --gray300: #e2e8f0;
+  --gray400: #cbd5e0;
+  --gray500: #a0aec0;
+  --gray600: #718096;
+  --gray700: #4a5568;
+  --gray800: #2d3748;
+  --gray900: #1a202c;
 
-  // 구성
-  --textBox: #f9f9f9;
-  --disableBtn: #e9eaed;
-  --divider: #f0f0f0;
-  --icon1: #b4b9c1;
-  --icon2: #727988;
-}
+  --blue100: #ebf8ff;
+  --blue200: #bee3f8;
+  --blue300: #90cdf4;
+  --blue400: #63b3ed;
+  --blue500: #4299e1;
+  --blue600: #3182ce;
+  --blue700: #2b6cb0;
+  --blue800: #2c5282;
+  --blue900: #2a4365;
 
-/* 다크모드 */
-[data-theme="Dark"] {
-  // 메인
+  // 브랜드 컬러
   --primaryColor: #fbd538;
 
   // 배경
-  --bg: #202124;
+  --bg: #202020;
+  --subBg: #191f28;
+  --overlay: #333333;
 
   // 텍스트
   --mainText: #ffffff;
   --subText: #868d9a;
 
-  // 구성
-  --textBox: #2d3138;
-  --disableBtn: #343a45;
-  --divider: #3b3b3b;
-  --icon1: #717988;
-  --icon2: #727988;
+  // 버튼
+  --button: #2d3138;
+}
+
+/* 라이트 모드 */
+[data-theme="Light"] {
+  // 브랜드 컬러
+  --primaryColor: #fcd034;
+
+  // 배경
+  --bg: #ffffff;
+  --subBg: #f9f9f9;
+  --overlay: #e5e5e5;
+
+  // 텍스트
+  --mainText: #21252f;
+  --subText: #868d9a;
+
+  // 버튼
+  --button: #e9eaed;
 }

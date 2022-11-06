@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
 import DesktopLayout from "@/layouts/DesktopLayout";
 
-function Resume() {
-  return <Wrapper>Resume</Wrapper>;
+function Skills() {
+  return <Wrapper>Skills</Wrapper>;
 }
 
-export default Resume;
+export default Skills;
 
-Resume.getLayout = function getLayout(page) {
+Skills.getLayout = function getLayout(page) {
   return <DesktopLayout>{page}</DesktopLayout>;
 };
 

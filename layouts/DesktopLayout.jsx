@@ -9,7 +9,7 @@ function DesktopLayout(props) {
   return (
     <Container>
       <Head></Head>
-      <Top></Top>
+      {/* <Top></Top> */}
       <Header></Header>
       <Body>{props.children}</Body>
       <Footer></Footer>

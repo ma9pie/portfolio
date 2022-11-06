@@ -1,6 +1,4 @@
 import styled from "@emotion/styled";
-import Theme from "@/components/common/ThemeToggle";
-import Header from "@/components/layout/Header";
 import DesktopLayout from "@/layouts/DesktopLayout";
 
 function Home() {
