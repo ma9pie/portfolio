@@ -10,12 +10,12 @@ export default function Document() {
         />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="red" />
         <meta
           name="msapplication-TileImage"
           content="icons/ms-icon-144x144.png"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="blue" />
         <link
           rel="apple-touch-icon"
           sizes="57x57"
