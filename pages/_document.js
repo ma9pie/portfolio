@@ -5,6 +5,7 @@ export default function Document() {
     <Html>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="height=device-height" />
         {/* 구글 애널리틱스 */}
         <script
           async
