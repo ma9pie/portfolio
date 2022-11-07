@@ -17,6 +17,7 @@ a {
   color: var(--mainText);
   font-family: "NotoSansKR";
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* 다크 모드(기본) */
