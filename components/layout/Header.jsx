@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Theme from "@/components/common/Theme";
-import brandLogo from "@/images/brandLogo.svg";
+import logo from "@/images/logo.svg";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
       <Link href="/">
         <a>
           <LogoContainer>
-            <Image src={brandLogo} alt="logo" width={30} height={30}></Image>
+            <Image src={logo} alt="logo" width={30} height={30}></Image>
             <LogoText>KIM JUN YOUNG</LogoText>
           </LogoContainer>
         </a>
